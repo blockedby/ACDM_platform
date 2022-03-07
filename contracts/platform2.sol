@@ -419,6 +419,8 @@ contract ACDMPlatform2 is AccessControl,ReentrancyGuard {
             hasRole(DEFAULT_ADMIN_ROLE,msg.sender),
             "A1"
         );
+        
         payable(msg.sender).transfer(etherBalances[address(this)]);
+        etherBalances[address(this)] = 0;
     }
 }
