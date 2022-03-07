@@ -1,0 +1,4 @@
+{
+    "solidity.compilerOptimization": 2,
+    "solidity.validationDelay": 750
+}
